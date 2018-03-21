@@ -17,7 +17,7 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="img/ballerina.png" class="d-inline-block align-top" width="20" alt="">
+                    <img src="img/ballerina.png" width="20" alt="">
                 </a>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -29,8 +29,12 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#" data-toggle="modal" data-target="#myModal">
-                                <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                                <a href="#">
+                                 Teacher</a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#myModal" onclick="logOut()">
+                                <span class="glyphicon glyphicon-log-out"></span> Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -38,8 +42,7 @@
         </nav>
         <div class="container">
             <div class="jumbotron jumbotron-inverse">
-                <h1>Bailamos Dance Studio</h1>
-                <p>Move your feet</p>
+                <h1>Teacher</h1>
             </div>
         </div>
     </div>
@@ -68,7 +71,7 @@
 
         </div>
     </div>
-    <script src="js/index.js"></script>
+    <script src="js/teacher.js"></script>
 </body>
 
 </html>

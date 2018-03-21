@@ -21,3 +21,14 @@ body, html {
     color: #F5F5F5;
     text-align: center;
  }
+
+ .navbar-brand img{
+     margin-top: -5px;
+ }
+
+ .card {
+    background: rgb(200, 54, 54); /* This is for ie8 and below */
+    background: rgba(200, 54, 54, 0.5); 
+    color: #F5F5F5;
+    text-align: center;
+ }
