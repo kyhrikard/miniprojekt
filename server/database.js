@@ -4,7 +4,7 @@ let users = [{
     firstname: 'Lisa',
     lastname: 'LaFlamme',
     age: 21,
-    classes: ['street', 'dancehall', 'balett']
+    classes: ['street']
 },
 {
     username: 'bart',
@@ -12,7 +12,7 @@ let users = [{
     firstname: 'Bart',
     lastname: 'LaFlamez',
     age: 41,
-    classes: ['street', 'dancehall', 'balett']
+    classes: ['dancehall', 'balett']
 },
 {
     username: 'homer',
@@ -20,7 +20,7 @@ let users = [{
     firstname: 'Homer',
     lastname: 'Rodriques',
     age: 32,
-    classes: ['street', 'dancehall', 'balett']
+    classes: ['street', 'ballet']
 },
 {
     username: 'adrienne',
@@ -28,7 +28,7 @@ let users = [{
     firstname: 'Adrienne',
     lastname: 'Picard',
     age: 28,
-    classes: ['street', 'dancehall', 'balett']
+    classes: ['balett']
 },
 {
     username: 'john',
@@ -36,7 +36,7 @@ let users = [{
     firstname: 'John',
     lastname: 'Travolta',
     age: 55,
-    classes: ['street', 'dancehall', 'balett']
+    classes: ['street']
 },
 {
     username: 'jennifer',
@@ -44,24 +44,24 @@ let users = [{
     firstname: 'Jennifer',
     lastname: 'Lopez',
     age: 44,
-    classes: ['street', 'dancehall', 'balett']
+    classes: ['street', 'dancehall']
 }
 ];
 
 let classes = [{
     name: 'street',
     dates: ['2018-03-16', '2018-03-23', '2018-03-30'],
-    start: '18:00',
+    start: '14:00',
     length: 2,
 },
 {
     name: 'dancehall',
     dates: ['2018-03-17', '2018-03-24', '2018-03-31'],
-    start: '18:00',
+    start: '17:00',
     length: 2,
 },
 {
-    name: 'ballet',
+    name: 'balett',
     dates: ['2018-03-18', '2018-03-25', '2018-04-01'],
     start: '18:00',
     length: 2,

@@ -30,19 +30,18 @@ app.get('/users', function (req, res) {
   res.json(database.users);
 });
 
-app.get('/teacher', function (req, res) {
-  res.json(teacher);
+app.get('/classes', function (req, res) {
+  res.json(database.classes);
 });
 
 app.post('/login', function (req, res) {
   let username = req.body.username;
 
-  database.users.forEach(element => {
-    if (element.username === username)
-    res.json({
-      username: element.username,
-      role: element.role
-    })
+  database.users.forEach(user => {
+    if (user.username === username)
+      res.json({
+        user
+      });
   });
 
   res.json('login failed');
