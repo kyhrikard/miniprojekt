@@ -5,7 +5,6 @@ body, html {
 .bg { 
     /* The image used */
     background-image: url("../img/ballet.jpg");
-
     /* Full height */
     height: 100%; 
 
@@ -33,5 +32,24 @@ body, html {
  }
 
  .card-text {
-     font-size: 2rem;
+     border-bottom: .5px solid #505050;
+     padding: 1rem;
  }
+
+ #passed-classes {
+     color: #505050;
+ }
+
+ .green {
+     color: green;
+ }
+
+.card-body h2, h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.card-body h3 {
+    text-transform: uppercase;
+    font-weight: 200;
+}

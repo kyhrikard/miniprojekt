@@ -32,7 +32,7 @@
                             <a href="#" id="user-name">Student</a>
                         </li>
                         <li>
-                            <a href="#" data-toggle="modal" data-target="#myModal" onclick="logOut()">
+                            <a href="#" onclick="logOut()">
                                 <span class="glyphicon glyphicon-log-out"></span> Logout</a>
                         </li>
                     </ul>
@@ -60,31 +60,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
 
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-body">
-                    <form action="#" role="form" onsubmit="return validateForm(this)">
-                        <div class="form-group">
-                            <label for="usrname">
-                                <span class="glyphicon glyphicon-user"></span> Username</label>
-                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-                        </div>
-                        <div class="form-group">
-                            <label for="psw">
-                                <span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                            <input type="password" class="form-control" id="psw" placeholder="Enter password">
-                        </div>
-                        <button type="submit" class="btn btn-default btn-success btn-block">
-                            <span class="glyphicon glyphicon-off"></span> Login</button>
-                    </form>
-                </div>
-            </div>
-
-        </div>
-    </div>
     <script src="js/index.js"></script>
     <script src="js/credentials.js"></script>
     <script src="js/student.js"></script>

@@ -1,22 +1,25 @@
 function drawSchedule() {
-    fetch(url + '/myclasses/' + user.id)
+    fetch(url + '/mystudentclasses/' + user.id)
         .then((resp) => resp.json())
         .then(function (data) {
             console.log(data);
             let upcomingClasses = removeOldClasses(data);
             let upcomingClassesDiv = document.getElementById('upcoming-classes');
             upcomingClasses.forEach(element => {
+                let heading = document.createElement('h3');
+                let textHeading = document.createTextNode(`${element.name}`);
+                heading.appendChild(textHeading);
                 let p = document.createElement('p');
                 let text = document.createTextNode(`
                 ${moment(element.datetime).format("dddd, Do MMMM YYYY,")} 
                 
                 ${moment(element.datetime).format("HH:mm")} 
                 /
-                ${element.name}
-                /
+
                 teacher: ${element.teacher}`);
                 p.classList.add('card-text');
                 p.appendChild(text);
+                upcomingClassesDiv.appendChild(heading);
                 upcomingClassesDiv.appendChild(p);
             });
 
@@ -25,7 +28,7 @@ function drawSchedule() {
             passedClasses.forEach(element => {
                 let p = document.createElement('p');
                 let text = document.createTextNode(`
-                ${moment(element.datetime).format("YYYY-MM-DD")} 
+                ${moment(element.datetime).format("dddd, Do MMMM YYYY,")} 
                 
                 ${moment(element.datetime).format("HH:mm")} 
                 /
