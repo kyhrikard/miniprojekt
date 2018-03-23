@@ -9,52 +9,51 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/user.css">
     <link rel="shortcut icon" type="image/png" href="img/ballerina.png" />
 </head>
 
 <body>
-    <div class="bg">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/ballerina.png" width="20" alt="">
-                </a>
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" id="user-name">Student</a>
-                        </li>
-                        <li>
-                            <a href="#" onclick="logOut()">
-                                <span class="glyphicon glyphicon-log-out"></span> Logout</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/ballerina.png" width="20" alt="">
+            </a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-        </nav>
-        <div class="container">
-            <div class="jumbotron jumbotron-inverse" id="jumbotron">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" id="user-name">Student</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="logOut()">
+                            <span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                    </li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card">
-                        <div class="card-body" id="upcoming-classes">
-                            <h2>upcoming classes</h2>
-                        </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron jumbotron-inverse" id="jumbotron">
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body" id="upcoming-classes">
+                        <h2>upcoming classes</h2>
                     </div>
                 </div>
-                <div class="col-sm-12">
-                    <div class="card">
-                        <div class="card-body" id="passed-classes">
-                            <h2>passed classes</h2>
-                        </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body" id="passed-classes">
+                        <h2>passed classes</h2>
                     </div>
                 </div>
             </div>
